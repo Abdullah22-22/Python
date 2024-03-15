@@ -362,9 +362,9 @@ while True:
         print (error)
 print(name_list)
 
-# massage to encryption software
-# use import sting &and the alpeapet
-# and move 2 step and fix y,z and fix " "
+'''massage to encryption software
+use import sting &and the alpeapet
+and move 2 step and fix y,z and fix '''
 
 import string
 alphapet=string.ascii_lowercase
@@ -390,62 +390,7 @@ print(abs(10.19))
 print(min(1,10,20,-50-100))
 print(max(1,10,20,-50-100))
 
-scop=3 
-n=int(input("how many scop u want: "))
-if n %scop ==0 :
-    print("ok")
-else:
-    print("we dont have this option")
-
-
-
-a="hello helsnki"
-reversed_words=' '.join(a.split()[::-1])
-print(reversed_words)
-print(a[::-1])      
-
-number=[]
-while True:
-  
-    ur_input=int(input("enter number:"))
-    
-    if ur_input== 0:
-        break
-    else:
-        number.append(ur_input)
-
-print(max(number))
-
-number=[]
-while True:
-  
-    ur_input=int(input("enter number:"))
-    
-    if ur_input== 0:
-        break
-    else:
-        number.append(ur_input)
-max_number = max(number)
-number.remove(max_number)
-max2_number=max(number)
-print(max2_number)
-
-
-mylist=[]
-n=input("enter:")
-mylist.append(n)
-print(mylist)
-print(mylist[0][2])
-print(mylist[0][-2])
-print(mylist[0][0:5])
-print(mylist[0][0:-2])
-print(mylist[0][0:-2:2])
-print(mylist[0][-1:0])
-
-print(mylist[0][1:-1:3])
-
-
-
+ 
 
 
 
