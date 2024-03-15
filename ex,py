@@ -1,0 +1,64 @@
+import json
+dictinoary={}
+while True:
+    name=input("name: ")
+    age=input("age: ")
+    num=input("num: ")
+    dictinoary[name]={"name":name,"age":age,"num":num}
+    n=input("continue: y")
+    if n == "y":
+        continue
+    else:
+        break
+js=json.dumps(dictinoary)
+with open("api.json",'w',)as f:
+    f.write(js,)
+
+import json
+with open('api.json','r') as f:
+    d = json.load(f)
+
+print(d)
+
+import json
+with open("data.json",'r')as f:
+    data=json.load(f)
+print(data)
+with open ("2data.json",'w')as f:
+    json.dump(data, f,indent=5, sort_keys=True)
+
+import json
+json_string='''
+    {
+        "studenta":[
+            {
+                "id":22,
+                "age":22,
+                "name":"xss"
+                
+            },
+            {
+                "id":25,
+                "age":26,
+                "name":"ss"
+            }
+        ]
+
+    }
+'''
+
+import json
+company_info={}
+while True:
+    name=input("enter ur name,if want stop press y: ")
+    if name.lower() == 'y':  # if user enters 'y', stop the loop
+        break
+    age=int(input("enter ur age: "))
+    postioin=input("enter ur postioin: ")
+    salary=input("enter ur salary: ")
+    company_info[name]={"name":name,"age":age,"postioin":postioin,"salary":salary}
+
+with open("info.json","w")as f:
+    json.dump(company_info,f,indent=5,sort_keys=True)
+
+
